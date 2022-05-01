@@ -1,0 +1,33 @@
+
+@import "../../../../../shared/styles/settings/colors";
+
+.searcher {
+  background-color: $grey;
+  height: 3rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: .6rem .8rem .6rem .8rem;
+  box-sizing: border-box;
+  position: relative;
+  transition: linear .1s background-color;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+
+  &__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    filter: invert(66%) sepia(35%) saturate(1440%) hue-rotate(176deg) brightness(87%) contrast(99%);  }
+
+  &__input {
+    flex: 1;
+    border: 0;
+    padding: 0 .8rem 0 1.8rem;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+  }
+}
